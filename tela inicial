@@ -1,0 +1,29 @@
+  <TextInput
+    style={styles.input}
+    placeholder="Email"
+    keyboardType="email-address"
+    autoCapitalize="none"
+    value={email}
+    onChangeText={setEmail}
+  />
+
+  <TextInput
+    style={styles.input}
+    placeholder="Senha"
+    secureTextEntry 
+    value={password}
+    onChangeText={setPassword}
+  />
+
+  <TouchableOpacity style={styles.button} onPress={handleLogin}>
+    <Text style={styles.buttonText}>Entrar</Text>
+  </TouchableOpacity>
+
+  <TouchableOpacity>
+    <Text style={styles.forgotPassword}>Esqueceu a senha ?</Text>
+  </TouchableOpacity>
+
+    <TouchableOpacity>
+    <Text style={styles.register}>Novo usuario ?</Text>
+  </TouchableOpacity>
+</View>
